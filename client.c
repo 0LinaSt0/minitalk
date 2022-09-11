@@ -6,7 +6,7 @@
 /*   By: msalena <msalena@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 21:52:38 by msalena           #+#    #+#             */
-/*   Updated: 2021/09/05 16:05:38 by msalena          ###   ########.fr       */
+/*   Updated: 2022/09/11 16:50:53 by msalena          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,12 @@ int	main(int argc, char **argv)
 	int		i;
 	char	*point;
 
+	if (argc < 2)
+	{
+		write(1, "error: please, give me more arguments\n", 39);
+		return 1;
+	}
 	i = 2;
-	if (argc != 3)
-		return (0);
 	point = *(argv + i);
 	while (point)
 	{

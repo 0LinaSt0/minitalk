@@ -32,4 +32,6 @@ void	ft_malloc(int fl);
 
 void	sigusrs(int sig);
 void	shaping_N_printing_str(void);
+
 #endif
+

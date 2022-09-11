@@ -6,7 +6,7 @@
 /*   By: msalena <msalena@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 22:11:24 by msalena           #+#    #+#             */
-/*   Updated: 2021/09/03 22:11:25 by msalena          ###   ########.fr       */
+/*   Updated: 2022/09/11 16:47:05 by msalena          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,12 +58,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	i;
 	size_t	begin;
 	size_t	end;
-	size_t	length;
 
 	i = 0;
 	if (!s1 || !set)
 		return (0);
-	length = ft_strlen((char *)s1);
 	begin = ft_copsig_begin(s1, set);
 	end = ft_copsig_end(s1, set, begin);
 	d = (char *)malloc(end - begin + 2);

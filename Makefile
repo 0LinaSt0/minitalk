@@ -57,3 +57,4 @@ fclean:		clean
 			cd ${LIBFT} && ${MAKE} fclean
 
 .PHONY:		all re clean fclean
+
